@@ -43,22 +43,29 @@
     <main>
 <section>
   <h1>Contacto</h1>
+  <p>Nos interesa conocerte y saber tù opinion al respecto, saber que es lo que te gustaria, contenido que desees ver o cambios que harias. Recorda que tù opinion es de gran interes! </p>
+  <form action="envio.php">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" placeholder="nombre o alias">
+    <label for="floatingInput">Nombre</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" placeholder="Numero de celular">
+    <label for="floatingPassword">Telefono</label>
+  </div>
   <div class="form-floating mb-3">
     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-    <label for="floatingInput">Email address</label>
+    <label for="floatingPassword">E-mail</label>
   </div>
-  <div class="form-floating">
-    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-    <label for="floatingPassword">Password</label>
-  </div>
-  <div class="form-floating">
-    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-    <label for="floatingPassword">Password</label>
-  </div>
-  <div class="form-floating">
+  <div class="form-floating mb-3">
     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-    <label for="floatingTextarea2">Comments</label>
+    <label for="floatingTextarea2">Comentarios</label>
   </div>
+  <div>
+  <input class="btn btn-primary" type="reset" value="Reset">
+  <input class="btn btn-primary" type="submit" value="Submit">
+</div>
+</form>
 </section>
 <section>
   <h1>Preguntas Frecuentes</h1>
@@ -66,7 +73,7 @@
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Accordion Item #1
+          ¿Qué es este Sitio Web en realidad?
         </button>
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -78,7 +85,7 @@
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
+          ¿Porque se llama "Tienda" si solo es un redireccionador?
         </button>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -90,7 +97,7 @@
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
+          ¿No se que poner aqui aun :D?
         </button>
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
