@@ -146,3 +146,48 @@ margin-right: 50px;
 .btn{
     background-color: orangered;
 }
+/*Tienda*/
+
+.card-img-top-tienda{
+    width: 80%;
+    margin: 0.2em;
+}
+
+.media-t{
+    background-color: rgb(86, 80, 80);
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    border: solid 0.313em rgb(246, 67, 18); 
+/*Pc*/
+@media (min-width: 1025px) and (max-width: 1600px){
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "card1 card2 card3 card4 card5";
+
+#card1{
+    grid-area: card1;
+    margin: 3%;
+}
+#card2{
+    grid-area: card2;
+    margin: 3%;
+}
+#card3{
+    grid-area: card3;
+    margin: 3%;
+}
+#card4{
+    grid-area: card4;
+    margin: 3%;
+}
+#card5{
+    grid-area: card5;
+    margin: 3%;
+}
+    }
+}
