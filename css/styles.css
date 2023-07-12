@@ -1,193 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300;1,400&display=swap');
-/*selector universal*/
-*{
-    font-family: 'Raleway', sans-serif;
-    /*reset*/
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: rgb(222, 217, 217);
-}
-.footer{
-    background-color:#2B3035;
-    padding: 1.000em 3.000em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-    .footer p{
-    color: aliceblue;
-}
-div h5{
-    text-align-last: left;
-    font-weight: 1.000em;
-    font-size: 1.250em;
-}
-    div p1{
-        text-align-last: left;
-        font-weight: 1000em;
-        font-size: 1.150em;
-    }
-
-    .mobile{
-        display:none;
-
-@media(min-width: 320px) and (max-width: 600px){
-    display: flex;
-    }
-    }
-    .tablet{
-        display:none;
-
-    @media (min-width: 601px) and (max-width: 1024px) {
-        display: grid;
-    }
-    }
-    .PC{
-        display: none;
-
-    @media (min-width: 1025px) and (max-width: 1600px) {
-        display: block;
-    }
-    }
-    .comlet{
-        display: none;
-    @media (min-width: 601px) and (max-width: 1600px){
-        display: block;
-    }
-    }
-.grid{
-    width: 100%;
-    display: grid;
-}
-.grid-tetris{
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "history games"
-    "shop supp";
-}
-#history{
-    grid-area: history;
-}
-#games{
-    grid-area: games;
-}
-#shop{
-    grid-area: shop;
-}
-#supp{
-    grid-area: supp;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300;1,400&display=swap");
+* {
+  Font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.contenedor{
-    display: flex;
+body {
+  background-color: rgb(222, 217, 217);
 }
-.text{
-    text-decoration: solid;
-    text-align: center;
-    color: orangered;
+
+.footer {
+  background-color: #2B3035;
+  padding: 1em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.texto{    
-    display: inline-block;
-    vertical-align: top;
-    align-self: center;
-    text-decoration: solid
+
+.footer p {
+  color: aliceblue;
+}
+
+div h5 {
+  text-align-last: left;
+  font-weight: 1em;
+  font-size: 1.25em;
+}
+
+div p1 {
+  text-align-last: left;
+  font-weight: 1em;
+  font-size: 1.15em;
+}
+
+.contenedor {
+  display: flex;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+  color: orangered;
+}
+
+.btn {
+  background-color: orangered;
+}
+
+.mobile {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  .mobile {
+    Display: flex;
   }
-.imagen{
-width: 350px;
-margin-right: 50px;
 }
-.text-right{
-    text-align: right;
+
+.tablet {
+  display: none;
 }
-.text-center{
-    text-align: center;
-    color: orangered;
+@media (min-width: 601px) and (max-width: 1024px) {
+  .tablet {
+    display: grid;
+  }
 }
-.pcarousel{
+
+.PC {
+  display: none;
+}
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .PC {
+    display: block;
+  }
+}
+
+.comlet {
+  display: none;
+}
+@media (min-width: 601px) and (max-width: 1600px) {
+  .comlet {
+    display: block;
+  }
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+}
+
+.grid-tetris {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "history games" "shop supp";
+}
+
+#history {
+  grid-area: history;
+}
+
+#games {
+  grid-area: games;
+}
+
+#shop {
+  grid-area: shop;
+}
+
+#supp {
+  grid-area: supp;
+}
+
+.text {
+  text-decoration: solid;
+  text-align: center;
+  color: orangered;
+}
+
+.texto {
+  display: inline-block;
+  vertical-align: top;
+  align-self: center;
+  text-decoration: solid;
+}
+
+.imagen {
+  width: 350px;
+  margin-right: 50px;
+}
+
+.pcarousel {
+  text-decoration: solid;
+  color: orangered;
+  font-size: 3em;
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .card-img-overlay {
     text-decoration: solid;
-    color: orangered;
-    font-size: 3.000em;
+    font-size: 3em;
+  }
 }
-
-.card-img-overlay{
-    @media (min-width: 1025px) and (max-width: 1600px){
-        text-decoration: solid;
-        font-size: 3.000em;
-    }
-}
-.media-c{
-
 
 @media (min-width: 1024px) and (max-width: 1600px) {
+  .media-c {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
-    grid-template-areas: 
-    "form-c imgcop";
-    
-#form-c{
-        grid-area: form-c;
-    }
-#Imgcop{
-        grid-area: imgcop;
-    }
-}
-}
-.imgcopw{
-    width: 90%;
-    margin: 1.750em;
-}
-.btn{
-    background-color: orangered;
-}
-/*Tienda*/
-
-.card-img-top-tienda{
-    width: 80%;
-    margin: 0.2em;
+    grid-template-areas: "form-c imgcop";
+  }
+  .media-c #form-c {
+    grid-area: form-c;
+  }
+  .media-c #Imgcop {
+    grid-area: imgcop;
+  }
 }
 
-.media-t{
-    background-color: rgb(86, 80, 80);
-    width: auto;
-    height: auto;
-    margin: auto;
-    padding: auto;
-    border: solid 0.313em rgb(246, 67, 18); 
-/*Pc*/
-@media (min-width: 1025px) and (max-width: 1600px){
+.imgcopw {
+  width: 90%;
+  margin: 1.75em;
+}
+
+.card-img-top-tienda {
+  width: 80%;
+  margin: 0.2em;
+}
+
+.media-t {
+  background-color: rgb(86, 80, 80);
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  border: solid 0.313em rgb(246, 67, 18);
+  /*Pc*/
+}
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .media-t {
     width: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 
-    "card1 card2 card3 card4 card5";
-
-#card1{
+    grid-template-areas: "card1 card2 card3 card4 card5";
+  }
+  .media-t #card1 {
     grid-area: card1;
     margin: 3%;
-}
-#card2{
+  }
+  .media-t #card2 {
     grid-area: card2;
     margin: 3%;
-}
-#card3{
+  }
+  .media-t #card3 {
     grid-area: card3;
     margin: 3%;
-}
-#card4{
+  }
+  .media-t #card4 {
     grid-area: card4;
     margin: 3%;
-}
-#card5{
+  }
+  .media-t #card5 {
     grid-area: card5;
     margin: 3%;
+  }
 }
-    }
-}
+
+/*# sourceMappingURL=styles.css.map */

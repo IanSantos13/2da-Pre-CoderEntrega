@@ -1,0 +1,77 @@
+.mobile{
+    display:$Nanay;
+
+@media(min-width: 320px) and (max-width: 600px){
+Display: $Flexy;
+}
+}
+.tablet{
+    display:$Nanay;
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    display: $Gridy;
+}
+}
+.PC{
+    display: $Nanay;
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+    display: $Blocky;
+}
+}
+.comlet{
+    display: $Nanay;
+@media (min-width: 601px) and (max-width: 1600px){
+    display: $Blocky;
+}
+}
+.grid{
+width: 100%;
+display: $Gridy;
+}
+.grid-tetris{
+grid-template-columns: $Grid-tem-col2;
+grid-template-rows: $Grid-tem-row2;
+grid-template-areas: 
+"history games"
+"shop supp";
+}
+#history{
+grid-area: history;
+}
+#games{
+grid-area: games;
+}
+#shop{
+grid-area: shop;
+}
+#supp{
+grid-area: supp;
+}
+.text{
+text-decoration: solid;
+text-align: center;
+color: $MainClr3;
+}
+.texto{    
+display: inline-block;
+vertical-align: top;
+align-self: center;
+text-decoration: solid
+}
+.imagen{
+width: 350px;
+margin-right: 50px;
+}
+.pcarousel{
+text-decoration: solid;
+color: $MainClr3;
+font-size: $Font-siz;
+}
+
+.card-img-overlay{
+@media (min-width: 1025px) and (max-width: 1600px){
+    text-decoration: solid;
+    font-size: $Font-siz;
+}
+}

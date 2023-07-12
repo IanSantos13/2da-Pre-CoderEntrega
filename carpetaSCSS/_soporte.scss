@@ -1,0 +1,23 @@
+.media-c{
+
+    @media (min-width: 1024px) and (max-width: 1600px) {
+        width: 100%;
+        display: $Gridy;
+        grid-template-columns: $Grid-tem-col2;
+        grid-template-rows: $Grid-tem-row2;
+        grid-template-areas: 
+        "form-c imgcop";
+        
+    #form-c{
+            grid-area: form-c;
+        }
+    #Imgcop{
+            grid-area: imgcop;
+        }
+    }
+    }
+    .imgcopw{
+        width: 90%;
+        margin: 1.750em;
+    }
+    
