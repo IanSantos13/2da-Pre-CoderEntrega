@@ -22,6 +22,7 @@ Que este curso no ha sido un reto al final, y más aun trabajando medio día per
 ![image](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)
 ### Links
 Dejo el Link del Deployment de Git Hub Pages: https://iansantos13.github.io/2da-Pre-CoderEntrega/
+
 El sitio subido al servidor de Netlify: https://prismatic-sawine-460fc1.netlify.app/index.html
 
 Muchisimas gracias por llegar hasta aqui :D
